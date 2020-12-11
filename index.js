@@ -64,8 +64,8 @@ const drawGrid = () => {
   ctx.strokeStyle = 'white';
   for (let i = 0; i < grid.length; i++) {
     ctx.beginPath();
-    ctx.moveTo(0, i * colsSize);
-    ctx.lineTo(size, i * colsSize);
+    ctx.moveTo(0, i * rowSize);
+    ctx.lineTo(size, i * rowSize);
     ctx.stroke();
   }
   for (let i = 0; i < grid[0].length; i++) {
