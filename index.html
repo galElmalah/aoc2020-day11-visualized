@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Advent of Code 2020 - Day 11</title>
+  </head>
+  <body>
+    <div class="container">
+      <canvas></canvas>
+
+      <div class="wrapper">
+        <h1>
+          Advent of code 2020
+          <a href="https://adventofcode.com/2020/day/11" target="_blank"
+            >day 11</a
+          >
+          visualization
+        </h1>
+        <div class="legend">
+          <span class="free">Free</span>
+          <span class="taken">Taken</span>
+          <span class="floor">Floor</span>
+        </div>
+        <div class="controls">
+          <div class="slider-container">
+            <div>
+              <label for="speedRange"
+                >speed: <output id="rangevalue">100</output>ms</label
+              >
+            </div>
+            <input
+              name="speed"
+              type="range"
+              min="1"
+              max="5000"
+              value="100"
+              class="slider"
+              id="speedRange"
+            />
+          </div>
+          <div id="parts" class="parts">
+            <input type="radio" id="part-1" name="part" value="1" checked />
+            <label for="part-1">Part's 1 Algorithm</label><br />
+            <input type="radio" id="part-2" name="part" value="2" />
+            <label for="part-2">Part's 2 Algorithm</label><br />
+          </div>
+          <button id="play">Play!</button>
+        </div>
+      </div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
